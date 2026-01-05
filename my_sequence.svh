@@ -14,7 +14,7 @@ class my_sequence extends uvm_sequence#(my_transaction);
             start_item(req);
 
             // Randomize input of full adder
-            if (!req.randomize() with { in_valid == 1; }) begin
+            if (!req.randomize()) begin
                 `uvm_error("SEQUENCE", "Randomize failed")
             end
 
@@ -23,3 +23,4 @@ class my_sequence extends uvm_sequence#(my_transaction);
     endtask : body
 
 endclass: my_sequence
+
