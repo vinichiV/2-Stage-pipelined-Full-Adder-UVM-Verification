@@ -7,7 +7,7 @@ class my_sequence extends uvm_sequence#(my_transaction);
     endfunction
 
     task body();
-      	repeat (100) begin
+        repeat (300) begin
             req = my_transaction::type_id::create("req");
 
             // Handshake driver
@@ -23,4 +23,5 @@ class my_sequence extends uvm_sequence#(my_transaction);
     endtask : body
 
 endclass: my_sequence
+
 
