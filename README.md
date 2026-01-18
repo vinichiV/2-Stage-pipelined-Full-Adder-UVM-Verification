@@ -19,7 +19,7 @@ The project includes:
 ```bash
 git clone https://github.com/vinichiV/UVM-Verification-for-2-stage-pipelined-Full-Adder
 
-cd UVM-Verification-for-2-stage-pipelined-Full-Adder
+cd 2-Stage-pipelined-Full-Adder-UVM-Verification
 
 vsim -do run.do
 ```
